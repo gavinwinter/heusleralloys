@@ -1,2 +1,2 @@
-# heusleralloys
-Integrated workflow for assessing material properties of Heusler alloys using VASP
+# heuslers
+Integrated workflow for assessing material properties of Heusler compounds using VASP
