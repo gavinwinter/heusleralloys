@@ -1,0 +1,8 @@
+New structure                           
+1.0
+        latparam         0.0000000000         0.0000000000
+        0.0000000000         latparam         0.0000000000
+        0.0000000000         0.0000000000         latparam
+   Element1   Element2   Element3   Element4
+    4    4    4    4
+Direct

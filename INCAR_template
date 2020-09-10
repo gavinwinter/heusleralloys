@@ -1,0 +1,70 @@
+SYSTEM=alloy_name
+ISMEAR=-5
+SIGMA=0.001
+
+
+ISIF=3
+NSW=30
+IBRION = 2
+ICHARG = 2
+
+!ISTART = 2
+
+NEDOS = 3600
+NELM = 200
+
+
+! ??Print??
+!
+!LVTOT = .TRUE.
+!LVHAR = .TRUE.
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+!
+
+
+!! SCAN !!
+GGA     = PE
+METAGGA = SCAN
+LASPH = .TRUE.
+!ALGO = F
+ADDGRID=.TRUE.
+LMIXTAU=.TRUE.
+!!!!!!!!
+
+
+!! Accurate results (From James) !!
+PREC      =  A
+EDIFF     =  1E-06
+EDIFFG    = -0.008
+ENCUT     =  400
+!ENAUG     =  650
+!!
+
+
+!! Linear Mixing !!
+AMIX      =  0.2
+AMIX_MAG  =  0.8
+BMIX      =  0.0001
+BMIX_MAG  =  0.0001
+
+
+LREAL   = FALSE
+LORBIT  = 11
+ISPIN   = 2
+!LSORBIT=.TRUE.
+
+
+!! Init. Moments
+! Element1 Element2 Element3 Element4
+MAGMOM = x
+!SAXIS =  0 0 1   ! quantization axis parallel to vector (x,y,z)
+
+!PSTRESS
+
+LPLANE = .TRUE.
+NBANDS = 96
+NPAR   = 4
+KPAR   = 2
+LSCALU = .FALSE.
+NSIM   = 4

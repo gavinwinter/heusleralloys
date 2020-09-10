@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --job-name=VASPrun
+#SBATCH --output=output.out
+#SBATCH --error=error.error
+#SBATCH --time=24:00:00
+#SBATCH --partition short
+#SBATCH --ntasks 48
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes 2
+#SBATCH --mem=100Gb
+
+mpirun -n 48 --mca btl_tcp_if_include 10.99.0.0/16 --mca btl tcp,self --mca orte_base_help_aggregate 0  /scratch/bansilgroup/vasp.5.4.4/bin/vasp_ncl
